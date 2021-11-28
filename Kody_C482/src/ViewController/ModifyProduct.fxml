@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ModifyProductController">
+   <children>
+      <Label layoutX="47.0" layoutY="66.0" text="Modify Product">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="464.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#SearchButton" prefHeight="34.0" prefWidth="84.0" text="Search" />
+      <TextField fx:id="searchField" layoutX="569.0" layoutY="67.0" prefHeight="25.0" prefWidth="149.0" />
+      <TableView fx:id="partTable" layoutX="315.0" layoutY="109.0" prefHeight="110.0" prefWidth="421.0">
+        <columns>
+          <TableColumn fx:id="partIdColumn" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="partNameColumn" prefWidth="101.0" text="Part Name" />
+            <TableColumn fx:id="partInvColumn" prefWidth="98.0" text="Inventory Level" />
+            <TableColumn fx:id="partPriceColumn" prefWidth="146.0" text="Price per Unit" />
+        </columns>
+      </TableView>
+      <TableView fx:id="partTable2" layoutX="315.0" layoutY="266.0" prefHeight="110.0" prefWidth="421.0">
+         <columns>
+            <TableColumn fx:id="partIdColumn2" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="partNameColumn2" prefWidth="101.0" text="Part Name" />
+            <TableColumn fx:id="partInvColumn2" prefWidth="100.0" text="Inventory Level" />
+            <TableColumn fx:id="partPriceColumn2" prefWidth="144.0" text="Price Per Unit" />
+         </columns>
+      </TableView>
+      <Button layoutX="643.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#AddButton" prefHeight="25.0" prefWidth="66.0" text="Add" />
+      <Button layoutX="643.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#DeleteButton" prefHeight="25.0" prefWidth="66.0" text="Delete" />
+      <Button layoutX="567.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#SaveButton" prefHeight="34.0" prefWidth="66.0" text="Save" />
+      <Button layoutX="643.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#CancelButton" prefHeight="34.0" prefWidth="66.0" text="Cancel" />
+      <TextField fx:id="idField" disable="true" editable="false" layoutX="88.0" layoutY="109.0" prefHeight="34.0" prefWidth="133.0" promptText="Auto Gen - Disabled" />
+      <TextField fx:id="nameField" layoutX="88.0" layoutY="157.0" prefHeight="34.0" prefWidth="133.0" promptText="Product Name" />
+      <TextField fx:id="invField" layoutX="88.0" layoutY="202.0" prefHeight="34.0" prefWidth="66.0" promptText="Inv" />
+      <TextField fx:id="priceField" layoutX="88.0" layoutY="249.0" prefHeight="34.0" prefWidth="66.0" promptText="Price" />
+      <TextField fx:id="maxField" layoutX="88.0" layoutY="294.0" prefHeight="34.0" prefWidth="66.0" promptText="Max" />
+      <TextField fx:id="minField" layoutX="221.0" layoutY="294.0" prefHeight="34.0" prefWidth="66.0" promptText="Min" />
+      <Label layoutX="33.0" layoutY="118.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="164.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="209.0" text="Inv">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="256.0" text="Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="301.0" text="Max">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="301.0" text="Min">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
